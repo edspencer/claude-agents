@@ -8,10 +8,12 @@
   "plugins": [
     {
       "name": "product-team",
-      "displayName": "Product Team",
       "description": "Comprehensive product development workflow with spec writing, planning, implementation, and testing agents plus GitHub integration",
       "version": "0.1.0",
-      "author": "Ed Spencer",
+      "author": {
+        "name": "Ed Spencer",
+        "email": "ed@edspencer.net"
+      },
       "source": "./plugins/product-team",
       "category": "Development"
     }
