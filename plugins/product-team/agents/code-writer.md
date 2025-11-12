@@ -180,7 +180,6 @@ When implementing a changeset phase:
 5. **Verify creation**: Confirm new file exists in `.changeset/` directory
 6. **Commit with changes**: Include changeset file in the same commit as implementation
 7. **Document in LOG.md**: Record changeset creation, file name, and rationale
-8. **Reference process doc**: See `.claude/docs/processes/changeset-management.md` for detailed guidance
 
 **Important Notes:**
 

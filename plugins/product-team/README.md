@@ -6,8 +6,8 @@ A comprehensive Claude Code plugin for product development featuring specificati
 
 This plugin provides a complete software development workflow system with:
 
-- **12 Specialized Agents** for different aspects of development
-- **17 Slash Commands** for quick workflows
+- **11 Specialized Agents** for different aspects of development
+- **14 Slash Commands** for quick workflows
 - **1 Skill** for GitHub issue synchronization
 - **Process Documentation** that ensures consistency across all work
 
@@ -34,8 +34,7 @@ This plugin provides a complete software development workflow system with:
 ### Testing & Quality Assurance
 
 - **browser-tester**: Automated browser testing
-- **screenshotter**: Captures screenshots for documentation
-- **Slash Commands**: `/screenshot`, `/run-integration-tests`, `/add-to-test-plan`
+- **Slash Commands**: `/run-integration-tests`, `/add-to-test-plan`
 
 ### Project Management
 
@@ -158,7 +157,6 @@ The plugin includes comprehensive process docs in `docs/processes/`:
 - **plan-rules.md**: How to create implementation plans
 - **code-rules.md**: Coding standards and patterns
 - **agent-rules.md**: Creating new specialized agents
-- **changeset-management.md**: Package versioning workflow
 - **process-manager-rules.md**: Process improvement guidelines
 
 ## Project-Specific Customization
@@ -210,7 +208,6 @@ Use plugin defaults, plus:
 | process-manager | Improve processes |
 | agent-maker | Create new agents |
 | browser-tester | Automated testing |
-| screenshotter | Capture screenshots |
 
 ## Commands Reference
 
@@ -225,7 +222,6 @@ Use plugin defaults, plus:
 - `/check-code` - Review code quality
 
 ### Testing
-- `/screenshot` - Capture screenshots
 - `/run-integration-tests` - Run test suite
 - `/add-to-test-plan` - Add test scenarios
 
@@ -236,9 +232,6 @@ Use plugin defaults, plus:
 - `/agentic-implement-plan` - Automated implementation
 - `/finish` - Complete and archive task
 - `/create-issue [title]` - Create GitHub issue
-
-### Utilities
-- `/mobile-ux` - Mobile UX analysis
 
 ## Known Limitations
 

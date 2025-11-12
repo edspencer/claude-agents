@@ -52,7 +52,6 @@ If both project and plugin versions exist, use the project version as it contain
    - The `/write-plan` SlashCommand automatically generates PLAN.md, TEST_PLAN.md, and COMMIT_MESSAGE.md
    - **COMMIT_MESSAGE.md GitHub Closing Syntax**: If the task directory follows `tasks/{issue-number}-{task-name}/` pattern, verify that COMMIT_MESSAGE.md includes the appropriate GitHub issue closing syntax at the end (see plan-rules.md "GitHub Issue Closing Syntax" section). The SlashCommand should generate this automatically, but verify it's present with the correct keyword (Fixes for bugs, Closes for features).
    - **Consult documentation-manager agent**: Before finalizing the plan, use the documentation-manager agent to identify which files in `.claude/docs/tech/` and `.claude/docs/user/` need updates based on the planned changes. Include their specific guidance in the plan's Documentation section.
-   - **Evaluate changeset requirement**: Determine if a changeset phase is needed using the decision framework in `.claude/docs/processes/changeset-management.md` (required for published packages like CLI)
    - Then, use the `/check-plan` SlashCommand to get critical feedback on the generated plan
    - Carefully review the feedback from `/check-plan`
    - Make informed decisions about which feedback to incorporate
@@ -69,7 +68,6 @@ If both project and plugin versions exist, use the project version as it contain
    - Migration strategy if applicable
    - Alignment with existing codebase patterns (from CLAUDE.md)
    - **Documentation update tasks**: Mandatory section identifying which files in `.claude/docs/tech/` and `.claude/docs/user/` need updates (populated by consulting documentation-manager agent)
-   - **Changeset phase**: If changes affect published packages (e.g., CLI), include changeset phase following guidance in `.claude/docs/processes/changeset-management.md`
    - **After-action report phase**: Final phase for submitting after-action report to process-manager agent
 
 4. **BragDoc-Specific Considerations**: Always account for:
@@ -79,10 +77,6 @@ If both project and plugin versions exist, use the project version as it contain
      - Consult `api-conventions.md` for API route patterns
      - See `authentication.md` for auth implementation details
      - Review `frontend-patterns.md` for React component patterns
-   - **Changeset Management**: Reference `.claude/docs/processes/changeset-management.md`:
-     - Evaluate if changes require a changeset (published packages only)
-     - Determine changeset type (patch/minor/major)
-     - Include changeset phase before after-action report if needed
    - Monorepo structure (apps/web, packages/database, packages/cli)
    - Server Components as default, Client Components only when necessary
    - Unified authentication (session + JWT for CLI)

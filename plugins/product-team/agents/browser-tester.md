@@ -57,13 +57,6 @@ The `?empty` query parameter creates a demo account without any pre-populated da
 
 You have access to Playwright MCP tools. Use them extensively:
 
-**Screenshot Tool**:
-
-- Capture screenshots at every significant step
-- Take screenshots before and after interactions
-- Use screenshots to verify UI state and identify visual issues
-- Include screenshots in your final report
-
 **Browser Console**:
 
 - Regularly check the browser console for JavaScript errors

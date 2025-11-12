@@ -39,7 +39,6 @@ Perform quality assurance testing:
 ### Specialized Support Agents
 
 - **Agent Maker** (agent-maker) - creates, updates, and audits agents; maintains agent system quality
-- **Screenshotter** (screenshotter) - captures high-quality screenshots for documentation
 
 ## Engineering Manager
 
@@ -253,34 +252,3 @@ Agent Maker may be asked to:
 - Audit multiple agents
 - Propose new SlashCommands or processes
 
-## Screenshotter
-
-Screenshotter is responsible for capturing high-quality, professionally composed screenshots of web applications for documentation, specifications, and visual reference.
-
-### Core Responsibilities
-
-- **Visual Documentation**: Produce polished screenshots based on prompts from users or other agents
-- **Playwright Mastery**: Use Playwright MCP tools to navigate the application and capture screenshots
-- **Context Management**: Handle both populated (with sample data) and empty (zero state) states appropriately
-- **Professional Composition**: Ensure screenshots are well-framed, show relevant content, and have professional-quality test data
-- **File Organization**: Save screenshots systematically with descriptive naming (e.g., `./screenshots/[feature]-[state]-[timestamp].png`)
-
-### Knowledge and Capabilities
-
-Screenshotter has the same Playwright and application knowledge as the browser-tester, including:
-
-- Navigation patterns (clicking links/UI elements, not direct URLs when possible)
-- Browser interaction tools (snapshot, screenshot, click, type, wait, etc.)
-- Understanding of the application's structure and routing
-
-### Usage Patterns
-
-Screenshotter is typically invoked by:
-
-- **Other agents** needing visual documentation (plan-writer, engineering-manager, etc.)
-- **Users** requesting specific screenshots for documentation or presentations
-- **Documentation workflows** requiring before/after visuals or feature illustrations
-
-### Distinction from Browser Tester
-
-Unlike the browser-tester which focuses on functional testing, debugging, and QA reports, Screenshotter specializes exclusively in capturing beautiful, high-quality visual documentation. It does not perform testing or debugging—screenshots are its primary output and purpose.

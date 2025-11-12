@@ -31,9 +31,8 @@ IMPORTANT: Our PLAN.md documents follow very strict plan requirements, as detail
 **CRITICAL REQUIREMENTS FROM plan-rules.md:**
 
 1. **Documentation Manager Consultation**: After drafting the initial plan but BEFORE using `/check-plan`, you MUST consult the documentation-manager agent to identify which documentation files in `.claude/docs/tech/` and `.claude/docs/user/` need updates. Include their specific guidance in your plan's Documentation section.
-2. **Changeset Evaluation**: Determine if a changeset phase is required using the decision framework in Check `.claude/docs/processes/changeset-management.md` (project) OR `~/.claude/plugins/repos/product-team/docs/processes/changeset-management.md` (plugin). Include a changeset phase if the plan modifies published packages (e.g., CLI).
-3. **GitHub Task Sync**: Include tasks to sync task files to GitHub at appropriate points using the `github-task-sync` skill. Plans should pull latest files from GitHub before starting work and push updates after major phases. See plan-rules.md section "GitHub Task Sync Integration" for complete workflow details.
-4. **After-Action Report Phase**: Every plan MUST include a final phase for submitting an after-action report to the process-manager agent. See plan-rules.md for the exact structure required.
+2. **GitHub Task Sync**: Include tasks to sync task files to GitHub at appropriate points using the `github-task-sync` skill. Plans should pull latest files from GitHub before starting work and push updates after major phases. See plan-rules.md section "GitHub Task Sync Integration" for complete workflow details.
+3. **After-Action Report Phase**: Every plan MUST include a final phase for submitting an after-action report to the process-manager agent. See plan-rules.md for the exact structure required.
 
 ### GitHub Task Sync Workflow
 

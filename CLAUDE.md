@@ -19,14 +19,14 @@ claude-agents/
 │       ├── .claude-plugin/
 │       │   ├── plugin.json       # Plugin metadata (simple schema)
 │       │   └── marketplace.json  # Standalone plugin marketplace manifest
-│       ├── agents/               # 12 specialized agents
-│       ├── commands/             # 17 slash commands
+│       ├── agents/               # 11 specialized agents
+│       ├── commands/             # 14 slash commands
 │       ├── skills/
 │       │   └── github-task-sync/ # GitHub issue synchronization
 │       ├── docs/
 │       │   ├── standing-orders.md
 │       │   ├── team.md
-│       │   └── processes/        # Process documentation (7 files)
+│       │   └── processes/        # Process documentation (6 files)
 │       └── README.md
 ├── README.md                     # Marketplace documentation
 ├── LICENSE                       # MIT License
@@ -122,29 +122,28 @@ The first and currently only plugin in this marketplace.
 
 ### Components
 
-**12 Agents:**
+**11 Agents:**
 - Specification: spec-writer, spec-checker
 - Planning: plan-writer, plan-checker
 - Implementation: code-writer, code-checker
 - Documentation: documentation-manager
-- Testing: browser-tester, screenshotter
+- Testing: browser-tester
 - Management: engineering-manager, process-manager, agent-maker
 
-**17 Slash Commands:**
+**14 Slash Commands:**
 - `/write-spec`, `/check-spec`
 - `/write-plan`, `/check-plan`
 - `/write-code`, `/check-code`
 - `/agentic-spec-and-plan`, `/agentic-create-spec`, `/agentic-create-plan`, `/agentic-implement-plan`
-- `/screenshot`, `/run-integration-tests`, `/add-to-test-plan`
-- `/finish`, `/create-issue`, `/mobile-ux`
+- `/run-integration-tests`, `/add-to-test-plan`
+- `/finish`, `/create-issue`
 
 **1 Skill:**
 - github-task-sync: Bidirectional sync between local task files and GitHub issues
 
-**7 Process Documents:**
+**6 Process Documents:**
 - spec-rules.md, plan-rules.md, code-rules.md
 - agent-rules.md, process-manager-rules.md
-- changeset-management.md
 - Standing orders and team documentation
 
 ## Development Workflow

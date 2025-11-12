@@ -226,7 +226,7 @@ Those belong in after-action reports in `.claude/docs/after-action-reports/`. Th
 > "When introducing new cross-cutting processes, ensure planning and implementation agents reference the process documentation at appropriate workflow stages."
 
 **Example of inappropriate content for this file (belongs in after-action report):**
-> "Updated plan-writer.md to include reference to changeset-management.md in the planning phase. Created comprehensive process document at .claude/docs/processes/changeset-management.md with sections for when to use changesets, creating changesets, and versioning workflow."
+> "Updated plan-writer.md to include new process requirements. Created comprehensive process documentation with sections for implementing new workflows and handling edge cases."
 
 ### Lessons
 

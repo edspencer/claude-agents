@@ -89,7 +89,6 @@ color: [blue|purple|red|yellow|green|cyan|magenta]  # Visual identifier
   - `/finish` - Complete tasks
   - `/add-to-test-plan` - Add tests to test plan
   - `/run-integration-tests` - Run Playwright tests
-  - `/mobile-ux` - Test mobile UX
 
 **Agent Types and Colors:**
 
@@ -283,7 +282,6 @@ You must maintain deep knowledge of:
 - `/finish` - Complete and archive tasks
 - `/add-to-test-plan` - Merge tests into master plan
 - `/run-integration-tests` - Execute Playwright tests
-- `/mobile-ux` - Mobile viewport testing
 
 **Team Structure (`.claude/docs/team.md`)**:
 

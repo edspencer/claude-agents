@@ -46,7 +46,6 @@ All in `docs/processes/` subdirectory:
 - `code-rules.md` - Code implementation process
 - `agent-rules.md` - Agent creation process
 - `process-manager-rules.md` - Process management rules
-- `changeset-management.md` - Package versioning process
 
 ## Standard Section for All Agents
 

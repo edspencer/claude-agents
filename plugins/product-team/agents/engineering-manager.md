@@ -141,13 +141,6 @@ You coordinate work across specialized agents:
 - Provide: Requirements for new agents or issues with existing agent definitions
 - Expect: Well-crafted agent definition files in `.claude/agents/`
 
-**screenshotter:**
-
-- Captures professional screenshots of the application
-- Use when: Need high-quality screenshots for documentation, marketing, or bug reports
-- Provide: Specific pages or features to screenshot
-- Expect: Professional screenshots with consistent styling and annotations
-
 **Other agents:**
 
 - Delegate to appropriate specialized agents based on task requirements

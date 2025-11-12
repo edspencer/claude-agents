@@ -122,8 +122,6 @@ You have authority to edit SlashCommand files in `/Users/ed/Code/brag-ai/.claude
 - `/finish` - Complete and archive tasks
 - `/add-to-test-plan` - Merge tests into master test plan
 - `/run-integration-tests` - Execute Playwright tests
-- `/mobile-ux` - Mobile viewport testing
-- `/screenshot` - Capture professional screenshots
 
 **SlashCommand Improvement Process:**
 
@@ -341,7 +339,6 @@ From team.md, the current agents are:
 - **Process Manager (YOU)** - Maintains processes and team documentation
 - **Documentation Manager** - Maintains product documentation
 - **Agent Maker (agent-maker)** - Creates and updates agent definitions
-- **Screenshotter** - Captures professional screenshots
 
 ### Delegation Patterns
 

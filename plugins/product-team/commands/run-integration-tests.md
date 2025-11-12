@@ -19,7 +19,6 @@ ALWAYS begin by:
 1. Navigate to http://ngrok.edspencer.net/demo
 2. Click the button to create a demo account
 3. Wait for successful authentication before proceeding
-4. Take a screenshot of the authenticated dashboard
 
 ALWAYS finish by:
 
@@ -31,7 +30,6 @@ Work through ALL test sections in `./test/integration/TEST-PLAN.md` systematical
 
 - Execute the test steps using Playwright MCP tools
 - Record PASS or FAIL status
-- Take screenshots as evidence
 - Note any console errors or warnings
 - Do NOT attempt to debug failures - just document them
 
@@ -40,7 +38,6 @@ Work through ALL test sections in `./test/integration/TEST-PLAN.md` systematical
 **DO:**
 
 - Navigate by clicking links and UI elements (not direct URLs except /demo)
-- Take screenshots at key points
 - Check browser console regularly
 - Test systematically through all items
 - Record exact error messages when failures occur
@@ -66,23 +63,9 @@ Use Playwright MCP tools extensively:
 - `browser_console_messages` - Check for errors
 - `browser_wait_for` - Wait for elements or text
 
-### 5. Report Generation and file saving
+### 5. Report Generation
 
-**Important**: Playwright MCP saves screenshots to `.playwright-mcp/test/runs/...` by default. After testing is complete, you MUST move the screenshots to the correct location:
-
-1. Create a new test run directory: `./test/integration/runs/YYYY-MM-DD-N/` (where N is an index for multiple runs on the same day)
-2. Create a `screenshots/` subdirectory inside the run directory
-3. Move all screenshots from `.playwright-mcp/test/runs/YYYY-MM-DD-N/screenshots/` to `./test/integration/runs/YYYY-MM-DD-N/screenshots/`
-4. Generate a comprehensive report at `./test/integration/runs/YYYY-MM-DD-N/REPORT.md`
-5. Create a standalone index.html in the run directory that is a nicely styled version of the .md file with screenshot images rendered inline
-
-**Example commands:**
-
-```bash
-# After testing completes, move screenshots to the correct location
-mkdir -p ./test/integration/runs/2025-10-17-1/screenshots/
-mv .playwright-mcp/test/runs/2025-10-17-1/screenshots/* ./test/integration/runs/2025-10-17-1/screenshots/
-```
+After testing is complete, generate a comprehensive report at `./test/integration/runs/YYYY-MM-DD-N/REPORT.md` (where N is an index for multiple runs on the same day).
 
 The report should have the following structure:
 
@@ -124,11 +107,6 @@ The report should have the following structure:
 - [x] Test name - PASS
 
 [Continue for each test...]
-
-#### Screenshots
-
-- `screenshot-001-sidebar-overview.png` - Sidebar structure
-- `screenshot-002-careers-section.png` - Careers section detail
 
 ---
 
@@ -188,14 +166,6 @@ The report should have the following structure:
 
 ---
 
-## Screenshots
-
-All screenshots saved to: `./test/integration/runs/YYYY-MM-DD-N/screenshots/`
-
-[List key screenshots with descriptions]
-
----
-
 ## Recommendations
 
 [High-level recommendations for addressing failures, but no specific debugging or code changes]
@@ -214,9 +184,8 @@ All screenshots saved to: `./test/integration/runs/YYYY-MM-DD-N/screenshots/`
 - **DO NOT propose fixes** - only report findings
 - **DO continue testing** even after failures
 - **DO be thorough** - test every checkbox in the test plan
-- **DO capture evidence** - screenshots and error messages
+- **DO capture evidence** - error messages and console logs
 - **ALWAYS create demo account** at start of session
-- **MOVE screenshots** from `.playwright-mcp/` to `./test/integration/runs/YYYY-MM-DD-N/screenshots/` after testing
 - **SAVE report to ./test/integration/runs/YYYY-MM-DD-N/REPORT.md** when complete
 
 ## Success Criteria
@@ -225,10 +194,7 @@ A successful test run means:
 
 1. All tests in TEST-PLAN.md were attempted
 2. Clear PASS/FAIL status recorded for each test
-3. Screenshots captured showing key states
-4. Screenshots moved from `.playwright-mcp/` to `./test/integration/runs/YYYY-MM-DD-N/screenshots/`
-5. Console errors documented
-6. Comprehensive report generated at `./test/integration/runs/YYYY-MM-DD-N/REPORT.md`
-7. Standalone HTML version of report created at `./test/integration/runs/YYYY-MM-DD-N/index.html`
+3. Console errors documented
+4. Comprehensive report generated at `./test/integration/runs/YYYY-MM-DD-N/REPORT.md`
 
 The tests themselves may pass or fail - your job is to execute them all and report accurately, not to achieve 100% pass rate.
