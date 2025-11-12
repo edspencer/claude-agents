@@ -91,11 +91,11 @@ Create a new GitHub issue and initialize a task directory. Can also convert exis
 ```
 Creating GitHub issue...
 Applying labels: UI,feature
-✓ GitHub issue created: https://github.com/edspencer/bragdoc-ai/issues/189
+✓ GitHub issue created: https://github.com/<github-user>/<repo-name>/issues/189
 ✓ Created task directory: tasks/189-add-dark-mode-toggle
 
 ✅ Task setup complete!
-Issue: https://github.com/edspencer/bragdoc-ai/issues/189
+Issue: https://github.com/<github-user>/<repo-name>/issues/189
 Task Directory: tasks/189-add-dark-mode-toggle
 Task Number: 189
 ```
@@ -119,7 +119,7 @@ Push all task documentation files (SPEC.md, PLAN.md, TEST_PLAN.md, COMMIT_MESSAG
 ./push.sh 188 ./tasks/188-account-deletion
 
 # Using full URL
-./push.sh https://github.com/edspencer/bragdoc-ai/issues/188 ./tasks/188-account-deletion
+./push.sh https://github.com/<github-user>/<repo-name>/issues/188 ./tasks/188-account-deletion
 
 # Using current directory
 ./push.sh 188
@@ -133,7 +133,7 @@ Push all task documentation files (SPEC.md, PLAN.md, TEST_PLAN.md, COMMIT_MESSAG
 
 **Output:**
 ```
-📤 Syncing task files to GitHub issue #188 in edspencer/bragdoc-ai
+📤 Syncing task files to GitHub issue #188 in <github-user>/<repo-name>
 
 Processing SPEC.md...
   + Creating new comment...
@@ -145,7 +145,7 @@ Processing PLAN.md...
 
 ...
 ✅ Sync complete!
-View the issue: https://github.com/edspencer/bragdoc-ai/issues/188
+View the issue: https://github.com/<github-user>/<repo-name>/issues/188
 ```
 
 ### push-file.sh
@@ -197,7 +197,7 @@ This is the second paragraph providing additional context or details about the d
 ↻ Updating SPEC comment on issue #188 (ID: 123456789)...
 ✓ Updated successfully
 
-View the issue: https://github.com/edspencer/bragdoc-ai/issues/188
+View the issue: https://github.com/<github-user>/<repo-name>/issues/188
 ```
 
 ### pull.sh
@@ -218,7 +218,7 @@ Pull all task documentation files from a GitHub issue to a local task directory.
 ./pull.sh 188
 
 # Pull using full URL
-./pull.sh https://github.com/edspencer/bragdoc-ai/issues/188
+./pull.sh https://github.com/<github-user>/<repo-name>/issues/188
 ```
 
 **What it does:**
@@ -231,7 +231,7 @@ Pull all task documentation files from a GitHub issue to a local task directory.
 
 **Output:**
 ```
-📥 Fetching issue #188 from edspencer/bragdoc-ai...
+📥 Fetching issue #188 from <github-user>/<repo-name>...
 📥 Pulling task files from GitHub issue #188: "Account deletion and data export"
 📁 Task directory: tasks/188-account-deletion-and-data-export
 
@@ -325,7 +325,7 @@ Add timestamped entries to a task's AI Work Log on a GitHub issue. Creates or up
 ./log-entry.sh 188 "Finished writing plan"
 
 # Use full URL
-./log-entry.sh https://github.com/edspencer/bragdoc-ai/issues/190 "Started implementation"
+./log-entry.sh https://github.com/<github-user>/<repo-name>/issues/190 "Started implementation"
 ```
 
 **What it does:**
@@ -339,7 +339,7 @@ Add timestamped entries to a task's AI Work Log on a GitHub issue. Creates or up
 ↻ Adding entry to work log on issue #188...
 ✓ Entry added
 
-View the issue: https://github.com/edspencer/bragdoc-ai/issues/188
+View the issue: https://github.com/<github-user>/<repo-name>/issues/188
 ```
 
 ## Task Directory Structure
@@ -478,7 +478,7 @@ When finishing a task (via `/finish` command):
 
 ## Setup & Configuration
 
-All scripts reference the default repository `edspencer/bragdoc-ai`. To use with a different repository, modify the `OWNER` and `REPO` variables in the scripts or pass full GitHub URLs.
+All scripts reference a default repository (which should be configured with your actual GitHub repository). To use with a different repository, modify the `OWNER` and `REPO` variables in the scripts or pass full GitHub URLs.
 
 **Using with different repository:**
 ```bash

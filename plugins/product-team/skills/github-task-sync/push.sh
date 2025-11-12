@@ -29,8 +29,8 @@ if [[ $ISSUE_INPUT =~ ^https?://github\.com/ ]]; then
   ISSUE_URL="$ISSUE_INPUT"
 else
   # Assume it's just a number, try to infer from current directory
-  # Or default to edspencer/bragdoc-ai (update as needed)
-  ISSUE_URL="https://github.com/edspencer/bragdoc-ai/issues/$ISSUE_INPUT"
+  # Or default to configured repository (update GITHUB_OWNER and GITHUB_REPO as needed)
+  ISSUE_URL="https://github.com/${GITHUB_OWNER:-your-org}/${GITHUB_REPO:-your-repo}/issues/$ISSUE_INPUT"
 fi
 
 # Parse the URL to extract owner, repo, and issue number

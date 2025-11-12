@@ -50,7 +50,7 @@ Please read .claude/docs/processes/code-rules.md and follow its instructions car
 
 You MUST use the /write-code Slash Command to implement the plan.
 
-### BragDoc-Specific Patterns
+### Project-Specific Patterns
 
 **IMPORTANT:** Before implementing, review the relevant technical documentation in `.claude/docs/tech/`:
 
@@ -69,7 +69,7 @@ You MUST follow these established patterns from the codebase and technical docum
 - Include `createdAt` and `updatedAt` timestamps with `.defaultNow()`
 - Always scope queries by `userId` for security
 - Use transactions for multi-table operations
-- Export reusable query functions from `@bragdoc/database`
+- Export reusable query functions from `@<org>/database`
 
 **API Routes**:
 
@@ -171,10 +171,10 @@ When implementing documentation update tasks:
 When implementing a changeset phase:
 
 1. **Verify all implementation complete**: Create changeset only after all code changes are done
-2. **Run from project root**: Execute `pnpm changeset` from `/Users/ed/Code/brag-ai`
+2. **Run from project root**: Execute `pnpm changeset` from the project root directory
 3. **Follow plan guidance**: Use the changeset type and description from the PLAN.md
 4. **Interactive prompts**:
-   - Select the affected package (typically `@bragdoc/cli`)
+   - Select the affected package (typically `@<org>/cli`)
    - Choose change type: patch (bug fixes), minor (new features), or major (breaking changes)
    - Enter the user-facing description from the plan
 5. **Verify creation**: Confirm new file exists in `.changeset/` directory

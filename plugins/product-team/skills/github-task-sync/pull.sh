@@ -15,7 +15,7 @@ if [ $# -lt 1 ]; then
   echo ""
   echo "Examples:"
   echo "  $0 188"
-  echo "  $0 https://github.com/edspencer/bragdoc-ai/issues/188"
+  echo "  $0 https://github.com/<github-user>/<repo-name>/issues/188"
   echo ""
   echo "The script will automatically create a directory named:"
   echo "  tasks/{issue-number}-{title-slug}"
@@ -28,7 +28,7 @@ ISSUE_INPUT="$1"
 if [[ $ISSUE_INPUT =~ ^https?://github\.com/ ]]; then
   ISSUE_URL="$ISSUE_INPUT"
 else
-  ISSUE_URL="https://github.com/edspencer/bragdoc-ai/issues/$ISSUE_INPUT"
+  ISSUE_URL="https://github.com/${GITHUB_OWNER:-your-org}/${GITHUB_REPO:-your-repo}/issues/$ISSUE_INPUT"
 fi
 
 # Parse the URL to extract owner, repo, and issue number

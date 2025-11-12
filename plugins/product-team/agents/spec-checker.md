@@ -62,7 +62,7 @@ When checking a specification, verify:
 - [ ] User stories or use cases are included
 - [ ] Dependencies are documented
 
-### BragDoc Alignment
+### Project Alignment
 
 - [ ] Considers monorepo structure
 - [ ] Accounts for authentication patterns
@@ -107,7 +107,7 @@ List any issues that must be fixed:
 - Missing required sections
 - Ambiguous or unclear requirements
 - Critical information gaps
-- Conflicts with BragDoc architecture
+- Conflicts with project architecture
 
 ### Important Issues
 

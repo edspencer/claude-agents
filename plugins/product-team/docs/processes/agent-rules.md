@@ -11,7 +11,7 @@ Before finalizing any work:
 - [ ] All file references are correct (`.claude/docs/tech/`, `.claude/commands/`, etc.)
 - [ ] Agent has clear, non-overlapping responsibility
 - [ ] Workflow steps are detailed and actionable
-- [ ] BragDoc-specific conventions are included
+- [ ] Project-specific conventions are included
 - [ ] SlashCommands are referenced appropriately
 - [ ] Quality standards are defined
 - [ ] Decision-making framework is clear

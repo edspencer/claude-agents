@@ -1,4 +1,4 @@
-# Rules for Engineers working on Bragdoc
+# Rules for Engineers working on the Project
 
 ## Additional code style rules
 

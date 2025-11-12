@@ -59,7 +59,7 @@ When checking a plan, verify:
 ### Completeness
 
 - [ ] All SPEC.md requirements addressed
-- [ ] File paths are specific and follow BragDoc conventions
+- [ ] File paths are specific and follow project conventions
 - [ ] Database changes use Drizzle ORM patterns
 - [ ] API routes follow RESTful conventions
 - [ ] Authentication patterns included
@@ -75,7 +75,7 @@ When checking a plan, verify:
 - [ ] Resource requirements reasonable
 - [ ] Risk mitigation considered
 
-### BragDoc Alignment
+### Project Alignment
 
 - [ ] Follows monorepo structure
 - [ ] Uses established authentication patterns
@@ -131,7 +131,7 @@ List any issues that block implementation:
 - Ambiguous implementation instructions
 - Critical architectural problems
 - Missing authentication or security
-- Incorrect BragDoc patterns
+- Incorrect project patterns
 - Missing documentation tasks
 
 ### Important Issues

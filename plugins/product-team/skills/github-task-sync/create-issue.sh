@@ -31,9 +31,9 @@ DESCRIPTION="${2:-}"
 EXISTING_TASK_DIR="${3:-}"
 LABELS="${4:-}"
 
-# Default repository (can be overridden)
-OWNER="edspencer"
-REPO="bragdoc-ai"
+# Default repository (can be overridden with your actual repository)
+OWNER="${GITHUB_OWNER:-your-org}"
+REPO="${GITHUB_REPO:-your-repo}"
 REPO_FULL="$OWNER/$REPO"
 
 echo "Creating GitHub issue..."

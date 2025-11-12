@@ -383,10 +383,10 @@ Those belong in after-action reports in `.claude/docs/after-action-reports/`. Th
 ### File Path Conventions
 
 Always use absolute paths in documentation:
-- `/Users/ed/Code/brag-ai/.claude/docs/team.md`
-- `/Users/ed/Code/brag-ai/.claude/docs/processes/`
-- `/Users/ed/Code/brag-ai/.claude/commands/`
-- `/Users/ed/Code/brag-ai/.claude/agents/`
+- `<project-root>/.claude/docs/team.md`
+- `<project-root>/.claude/docs/processes/`
+- `<project-root>/.claude/commands/`
+- `<project-root>/.claude/agents/`
 
 ### Change Documentation
 

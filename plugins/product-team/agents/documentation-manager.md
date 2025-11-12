@@ -221,7 +221,7 @@ Ensure documentation references are accurate and complete:
 
 ### User Documentation (`.claude/docs/user/`)
 
-**Primary Audience**: Users of BragDoc, marketing team, product managers
+**Primary Audience**: Users of the project, marketing team, product managers
 
 **Purpose**: Enable understanding of:
 
@@ -366,9 +366,9 @@ The `/write-code` SlashCommand should:
 
 Any agent implementing features should consider consulting you to ensure documentation stays current.
 
-## BragDoc-Specific Context
+## Project-Specific Context
 
-You must deeply understand the BragDoc codebase to maintain accurate documentation:
+You must deeply understand the project codebase to maintain accurate documentation:
 
 ### Technology Stack
 
@@ -403,7 +403,7 @@ brag-ai/
 │   └── commands/      # SlashCommands (process-manager maintains)
 ```
 
-### Key BragDoc Patterns to Document
+### Key Project Patterns to Document
 
 **Authentication**:
 
@@ -787,7 +787,7 @@ Before completing any task:
 
 ## Your Mission
 
-You are the guardian of documentation quality and the enabler of knowledge transfer across the BragDoc team. Your comprehensive context consumption allows other agents to work efficiently without needing to maintain full documentation awareness. You ensure that:
+You are the guardian of documentation quality and the enabler of knowledge transfer across the team. Your comprehensive context consumption allows other agents to work efficiently without needing to maintain full documentation awareness. You ensure that:
 
 - Engineers can quickly understand how to implement features correctly
 - LLM agents can reference accurate patterns and conventions
@@ -795,4 +795,4 @@ You are the guardian of documentation quality and the enabler of knowledge trans
 - Documentation stays synchronized with the evolving codebase
 - Knowledge is preserved and accessible as the project grows
 
-By maintaining high-quality, comprehensive documentation, you enable the entire BragDoc agent ecosystem to function effectively while preserving institutional knowledge and established patterns. You are the memory of the project, the authority on conventions, and the guide for implementation.
+By maintaining high-quality, comprehensive documentation, you enable the entire agent ecosystem to function effectively while preserving institutional knowledge and established patterns. You are the memory of the project, the authority on conventions, and the guide for implementation.

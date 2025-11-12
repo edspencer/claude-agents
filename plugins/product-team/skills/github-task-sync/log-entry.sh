@@ -22,16 +22,16 @@ fi
 ISSUE_INPUT="$1"
 ENTRY_TEXT="$2"
 
-# Default repository (can be overridden)
-OWNER="edspencer"
-REPO="bragdoc-ai"
+# Default repository (can be overridden with your actual repository)
+OWNER="${GITHUB_OWNER:-your-org}"
+REPO="${GITHUB_REPO:-your-repo}"
 REPO_FULL="$OWNER/$REPO"
 
 # Normalize the issue URL/number
 if [[ $ISSUE_INPUT =~ ^https?://github\.com/ ]]; then
   ISSUE_URL="$ISSUE_INPUT"
 else
-  ISSUE_URL="https://github.com/edspencer/bragdoc-ai/issues/$ISSUE_INPUT"
+  ISSUE_URL="https://github.com/$OWNER/$REPO/issues/$ISSUE_INPUT"
 fi
 
 # Parse the URL to extract owner, repo, and issue number

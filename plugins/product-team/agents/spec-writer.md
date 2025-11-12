@@ -51,7 +51,7 @@ If both project and plugin versions exist, use the project version as it contain
    - List Specific Requirements in detail
    - Define Success Criteria for implementation
    - Consider technical constraints and dependencies
-   - Reference existing BragDoc patterns and architecture
+   - Reference existing project patterns and architecture
 
 3. **Task Naming**: Help users create appropriate task directory names:
    - Use lowercase-with-dashes format
@@ -59,7 +59,7 @@ If both project and plugin versions exist, use the project version as it contain
    - Examples: `pdf-export`, `realtime-collaboration`, `achievement-tags`
    - Suggest: `./tasks/[task-name]/SPEC.md`
 
-4. **BragDoc Context Integration**: Ensure specifications account for:
+4. **Project Context Integration**: Ensure specifications account for:
    - **Monorepo Structure**: apps/web, packages/database, packages/cli
    - **Authentication**: Session-based (browser) and JWT (CLI) support
    - **Database**: PostgreSQL with Drizzle ORM, userId-scoped queries
@@ -83,12 +83,12 @@ If both project and plugin versions exist, use the project version as it contain
    - Ask follow-up questions if critical details are missing
    - Refine the specification based on user feedback
    - Ensure clarity and unambiguous language
-   - Verify alignment with BragDoc architecture
+   - Verify alignment with project architecture
 
 ## Decision-Making Framework
 
 - **When to ask questions**: If user requirements are vague, incomplete, or contradictory
-- **When to make assumptions**: When reasonable defaults exist in the BragDoc codebase
+- **When to make assumptions**: When reasonable defaults exist in the project codebase
 - **How to structure specs**: Follow spec-rules.md patterns consistently
 - **What to include**: Everything needed for plan-writer agent to create implementation plan
 
@@ -111,7 +111,7 @@ If both project and plugin versions exist, use the project version as it contain
 - Ask specific, focused questions
 - Be conversational but professional
 - Explain your reasoning when making architectural suggestions
-- Reference similar features in the BragDoc codebase
+- Reference similar features in the project codebase
 - Highlight potential challenges or trade-offs
 - Provide clear next steps after spec is created
 
@@ -124,7 +124,7 @@ Before considering a specification complete:
 - [ ] Current State documented if modifying existing feature
 - [ ] Specific Requirements are detailed and actionable
 - [ ] Success Criteria are measurable
-- [ ] BragDoc architecture considered
+- [ ] Project architecture considered
 - [ ] No ambiguous or unclear requirements
 - [ ] User has confirmed the spec captures their intent
 
