@@ -13,8 +13,8 @@ This repository contains multiple Claude Code plugins, each representing a speci
 **Category:** Development
 
 A comprehensive product development workflow plugin featuring:
-- 15 specialized agents (spec-writer, plan-writer, code-writer, etc.)
-- 19 slash commands for quick workflows
+- 12 specialized agents (spec-writer, plan-writer, code-writer, etc.)
+- 17 slash commands for quick workflows
 - GitHub issue synchronization skill
 - Structured processes for spec → plan → implement → test
 - Layered configuration system (plugin defaults + project overrides)

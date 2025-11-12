@@ -44,7 +44,6 @@ All in `docs/processes/` subdirectory:
 - `spec-rules.md` - Specification writing process
 - `plan-rules.md` - Implementation planning process
 - `code-rules.md` - Code implementation process
-- `blog-rules.md` - Blog writing process
 - `agent-rules.md` - Agent creation process
 - `process-manager-rules.md` - Process management rules
 - `changeset-management.md` - Package versioning process

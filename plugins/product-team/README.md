@@ -6,8 +6,8 @@ A comprehensive Claude Code plugin for product development featuring specificati
 
 This plugin provides a complete software development workflow system with:
 
-- **15 Specialized Agents** for different aspects of development
-- **19 Slash Commands** for quick workflows
+- **12 Specialized Agents** for different aspects of development
+- **17 Slash Commands** for quick workflows
 - **1 Skill** for GitHub issue synchronization
 - **Process Documentation** that ensures consistency across all work
 
@@ -27,12 +27,9 @@ This plugin provides a complete software development workflow system with:
 - **code-checker**: Reviews code quality and adherence to patterns
 - **Slash Commands**: `/write-code`, `/check-code`
 
-### Documentation & Content
+### Documentation
 
-- **blog-writer**: Creates technical blog posts
-- **blog-checker**: Reviews blog content
 - **documentation-manager**: Maintains technical and user documentation
-- **Slash Commands**: `/write-blog`, `/check-blog`
 
 ### Testing & Quality Assurance
 
@@ -44,7 +41,6 @@ This plugin provides a complete software development workflow system with:
 
 - **engineering-manager**: Oversees overall project workflows
 - **process-manager**: Maintains and improves development processes
-- **marketing-site-manager**: Manages marketing website content
 - **agent-maker**: Creates new specialized agents
 
 ### GitHub Integration
@@ -161,7 +157,6 @@ The plugin includes comprehensive process docs in `docs/processes/`:
 - **spec-rules.md**: How to write specifications
 - **plan-rules.md**: How to create implementation plans
 - **code-rules.md**: Coding standards and patterns
-- **blog-rules.md**: Technical blog writing guidelines
 - **agent-rules.md**: Creating new specialized agents
 - **changeset-management.md**: Package versioning workflow
 - **process-manager-rules.md**: Process improvement guidelines
@@ -210,12 +205,9 @@ Use plugin defaults, plus:
 | plan-checker | Validate implementation plans |
 | code-writer | Implement features |
 | code-checker | Review code quality |
-| blog-writer | Write technical blog posts |
-| blog-checker | Review blog content |
 | documentation-manager | Maintain docs |
 | engineering-manager | Oversee workflows |
 | process-manager | Improve processes |
-| marketing-site-manager | Manage marketing site |
 | agent-maker | Create new agents |
 | browser-tester | Automated testing |
 | screenshotter | Capture screenshots |
@@ -231,10 +223,6 @@ Use plugin defaults, plus:
 ### Implementation
 - `/write-code` - Implement according to plan
 - `/check-code` - Review code quality
-
-### Documentation
-- `/write-blog [topic]` - Create blog post
-- `/check-blog` - Review blog content
 
 ### Testing
 - `/screenshot` - Capture screenshots

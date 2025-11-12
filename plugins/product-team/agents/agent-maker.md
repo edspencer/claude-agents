@@ -79,7 +79,6 @@ color: [blue|purple|red|yellow|green|cyan|magenta]  # Visual identifier
   - `spec-rules.md` - For spec writing agents
   - `plan-rules.md` - For planning agents
   - `code-rules.md` - For implementation agents
-  - `blog-rules.md` - For blog writing agents
 - **SlashCommands**: Guide agents to use commands from `.claude/commands/`:
   - `/write-spec` - Create SPEC.md files
   - `/check-spec` - Validate specs against spec-rules.md
@@ -87,8 +86,6 @@ color: [blue|purple|red|yellow|green|cyan|magenta]  # Visual identifier
   - `/check-plan` - Validate plans against plan-rules.md
   - `/write-code` - Execute implementations
   - `/check-code` - Validate code against code-rules.md
-  - `/write-blog` - Create blog posts
-  - `/check-blog` - Validate blog posts against blog-rules.md
   - `/finish` - Complete tasks
   - `/add-to-test-plan` - Add tests to test plan
   - `/run-integration-tests` - Run Playwright tests
@@ -109,23 +106,23 @@ The agent system follows a consistent Writer/Checker pattern for all content typ
   - Thin wrappers around `/write-[content]` SlashCommands
   - Responsible for content creation, not validation
   - Reference appropriate `[content]-rules.md` files
-  - Examples: `spec-writer`, `plan-writer`, `code-writer`, `blog-writer`
+  - Examples: `spec-writer`, `plan-writer`, `code-writer`
 
 - **Checker Agents** (model: `haiku`): Validate content against rules
   - Thin wrappers around `/check-[content]` SlashCommands
   - Fast validation using smaller model
   - Read-only operation, provide structured feedback
   - Reference same `[content]-rules.md` files as corresponding writer
-  - Examples: `spec-checker`, `plan-checker`, `code-checker`, `blog-checker`
+  - Examples: `spec-checker`, `plan-checker`, `code-checker`
 
 **Agent Hierarchy:**
 
 1. **Manager Agents** (model: `sonnet`) - Orchestrate workflows, delegate to writers/checkers
-   - Examples: `engineering-manager`, `documentation-manager`, `marketing-site-manager`
+   - Examples: `engineering-manager`, `documentation-manager`
 2. **Writer Agents** (model: `sonnet`) - Create content following rules
-   - Examples: `spec-writer`, `plan-writer`, `code-writer`, `blog-writer`
+   - Examples: `spec-writer`, `plan-writer`, `code-writer`
 3. **Checker Agents** (model: `haiku`) - Validate content against rules
-   - Examples: `spec-checker`, `plan-checker`, `code-checker`, `blog-checker`
+   - Examples: `spec-checker`, `plan-checker`, `code-checker`
 4. **QA Agents** (model varies) - Perform quality assurance testing
    - Examples: `browser-tester`
 
@@ -274,7 +271,6 @@ You must maintain deep knowledge of:
 - `spec-rules.md` - Spec structure, requirements, content guidelines
 - `plan-rules.md` - Plan structure, documentation requirements, instructions
 - `code-rules.md` - Code style, database changes, constraints
-- `blog-rules.md` - Blog post structure, SEO, brand voice
 
 **SlashCommands (`.claude/commands/`)**:
 
@@ -284,8 +280,6 @@ You must maintain deep knowledge of:
 - `/check-plan` - Validate plans
 - `/write-code` - Execute implementation plans
 - `/check-code` - Validate implementations
-- `/write-blog` - Create blog posts
-- `/check-blog` - Validate blog posts
 - `/finish` - Complete and archive tasks
 - `/add-to-test-plan` - Merge tests into master plan
 - `/run-integration-tests` - Execute Playwright tests
@@ -312,9 +306,6 @@ Ensure agents work together effectively:
 - `plan-checker` validates plans, uses `/check-plan` SlashCommand
 - `code-checker` validates code, uses `/check-code` SlashCommand
 - `browser-tester` performs QA, reports to engineering-manager
-- `marketing-site-manager` coordinates blog writing and validation
-- `blog-writer` creates blog posts, uses `/write-blog` SlashCommand
-- `blog-checker` validates blog posts, uses `/check-blog` SlashCommand
 
 **Avoid Duplication:**
 
@@ -408,7 +399,7 @@ Before completing any agent creation or update:
 - Must gather all necessary context before invoking SlashCommand
 - Must use `model: sonnet` for content creation capability
 - Must be thin wrappers - SlashCommand contains the detailed logic
-- Examples: `spec-writer` (spec-rules.md, /write-spec), `plan-writer` (plan-rules.md, /write-plan), `code-writer` (code-rules.md, /write-code), `blog-writer` (blog-rules.md, /write-blog)
+- Examples: `spec-writer` (spec-rules.md, /write-spec), `plan-writer` (plan-rules.md, /write-plan), `code-writer` (code-rules.md, /write-code)
 
 **For Checker Agents:**
 
@@ -418,7 +409,7 @@ Before completing any agent creation or update:
 - Must provide structured feedback reports
 - Must use `model: haiku` for fast validation
 - Must be thin wrappers - SlashCommand contains validation logic
-- Examples: `spec-checker` (spec-rules.md, /check-spec), `plan-checker` (plan-rules.md, /check-plan), `code-checker` (code-rules.md, /check-code), `blog-checker` (blog-rules.md, /check-blog)
+- Examples: `spec-checker` (spec-rules.md, /check-spec), `plan-checker` (plan-rules.md, /check-plan), `code-checker` (code-rules.md, /check-code)
 
 **For Code Writer Agents (code-writer):**
 
@@ -445,7 +436,7 @@ Before completing any agent creation or update:
 - Must track task lifecycle
 - Must use `model: sonnet` for coordination capability
 - Color: purple (management)
-- Examples: `engineering-manager`, `documentation-manager`, `marketing-site-manager`
+- Examples: `engineering-manager`, `documentation-manager`
 
 ## Self-Verification Checklist
 
