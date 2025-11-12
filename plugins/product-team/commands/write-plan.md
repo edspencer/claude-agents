@@ -51,8 +51,8 @@ After creating the plan files, sync them to GitHub:
 
 2. **Push to GitHub**: Extract the issue number from the directory name and sync:
    ```bash
-   ./.claude/skills/github-task-sync/push-file.sh {issue-number} PLAN {status-file} PLAN.md
-   ./.claude/skills/github-task-sync/push.sh {issue-number} {task-directory}
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh {issue-number} PLAN {status-file} PLAN.md
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push.sh {issue-number} {task-directory}
    ```
 
 This creates/updates the PLAN comment with status summary visible and full plan in collapsible section, plus syncs TEST_PLAN.md and COMMIT_MESSAGE.md.

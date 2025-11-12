@@ -55,7 +55,7 @@ When working with a GitHub issue:
 3. **Create Status Summary**: After spec-checker validation is complete, create a 2-paragraph summary of what the specification covers (NOT a summary of the process that created it)
 4. **Push to GitHub**: Use `push-file.sh` to sync with status summary:
    ```bash
-   ./.claude/skills/github-task-sync/push-file.sh {issue-number} SPEC {status-file} SPEC.md
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh {issue-number} SPEC {status-file} SPEC.md
    ```
 
 **Status Summary Format:**
@@ -77,7 +77,7 @@ Key requirements include: [list 3-5 most important requirements]. [Mention any i
 **Example:**
 ```bash
 # After creating 2-paragraph status summary in a temp file or variable
-./.claude/skills/github-task-sync/push-file.sh 196 SPEC spec-status.txt ./tasks/196-team-page/SPEC.md
+~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh 196 SPEC spec-status.txt ./tasks/196-team-page/SPEC.md
 ```
 
 This creates/updates the SPEC comment on GitHub with:
@@ -85,4 +85,4 @@ This creates/updates the SPEC comment on GitHub with:
 - Status summary visible at top
 - Full spec content in collapsible `<details>` section
 
-**Reference:** See `.claude/skills/github-task-sync/SKILL.md` for complete documentation.
+**Reference:** See `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/SKILL.md` for complete documentation.

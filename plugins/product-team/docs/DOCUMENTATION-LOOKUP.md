@@ -9,7 +9,7 @@ NOTE: There is an issue with ${CLAUDE_PLUGIN_ROOT} that prevents the plugin from
 The plugin uses a **layered configuration** approach where plugin defaults can be overridden by project-specific customizations:
 
 ### Layer 1: Plugin Defaults (Global)
-- Location: `~/.claude/plugins/repos/product-team/docs/`
+- Location: `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/`
 - Provides: Base process rules and standards that work across projects
 - When to use: Always check first for core processes
 
@@ -23,19 +23,19 @@ The plugin uses a **layered configuration** approach where plugin defaults can b
 When an agent needs to reference process documentation, follow this order:
 
 1. **Check project overrides first**: `.claude/docs/[document-name].md`
-2. **Fall back to plugin defaults**: `~/.claude/plugins/repos/product-team/docs/[document-name].md`
+2. **Fall back to plugin defaults**: `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/[document-name].md`
 
 If a project-specific version exists, it should be treated as **extensions or overrides** to the base plugin rules. Apply both sets of rules, with project rules taking precedence on conflicts.
 
 ## Core Documentation Files
 
 ### Standing Orders
-- Plugin: `~/.claude/plugins/repos/product-team/docs/standing-orders.md`
+- Plugin: `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/standing-orders.md`
 - Project: `.claude/docs/standing-orders.md`
 - Purpose: Cross-cutting concerns that apply to all agents
 
 ### Team Structure
-- Plugin: `~/.claude/plugins/repos/product-team/docs/team.md`
+- Plugin: `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/team.md`
 - Project: `.claude/docs/team.md`
 - Purpose: Agent roles and responsibilities
 
@@ -57,8 +57,8 @@ Every agent should include this section after the frontmatter:
 **IMPORTANT: This plugin uses layered documentation.**
 
 Before beginning work, check these documents in order:
-1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/repos/product-team/docs/standing-orders.md` (plugin)
-2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/repos/product-team/docs/processes/[relevant-process].md` (plugin)
+1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/standing-orders.md` (plugin)
+2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/processes/[relevant-process].md` (plugin)
 
 If both project and plugin versions exist, use the project version as it contains project-specific extensions or overrides.
 ```

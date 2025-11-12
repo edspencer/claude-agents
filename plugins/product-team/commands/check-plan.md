@@ -54,7 +54,7 @@ After generating PLAN-STATUS.md and your validation feedback, sync the status to
 1. **Determine issue number**: Extract from task directory name (format: `tasks/{issue-number}-{task-name}/`)
 2. **Push status to GitHub**: Use the `github-task-sync/push-file.sh` script to update the PLAN comment with status summary
    ```bash
-   ~/.claude/plugins/repos/product-team/skills/github-task-sync/push-file.sh <issue-number> PLAN PLAN-STATUS.md PLAN.md
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh <issue-number> PLAN PLAN-STATUS.md PLAN.md
    ```
 
 This keeps the GitHub issue updated with the current plan validation status. The PLAN-STATUS.md file provides the 2-paragraph summary that appears at the top of the collapsible PLAN comment on GitHub.

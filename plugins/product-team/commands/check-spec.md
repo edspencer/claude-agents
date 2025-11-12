@@ -10,7 +10,7 @@ Your task is to validate a SPEC.md file ($1) against the requirements in spec-ru
 
 ## Your Task
 
-Read the specification document and validate it against Check `.claude/docs/processes/spec-rules.md` (project) OR `~/.claude/plugins/repos/product-team/docs/processes/spec-rules.md` (plugin). This is a read-only validation task - do not modify the spec file.
+Read the specification document and validate it against Check `.claude/docs/processes/spec-rules.md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/processes/spec-rules.md` (plugin). This is a read-only validation task - do not modify the spec file.
 
 ### Validation Checklist
 
@@ -89,7 +89,7 @@ After generating SPEC-STATUS.md and your validation feedback, sync the status to
 1. **Determine issue number**: Extract from task directory name (format: `tasks/{issue-number}-{task-name}/`)
 2. **Push status to GitHub**: Use the `github-task-sync/push-file.sh` script to update the SPEC comment with status summary
    ```bash
-   ~/.claude/plugins/repos/product-team/skills/github-task-sync/push-file.sh <issue-number> SPEC SPEC-STATUS.md SPEC.md
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh <issue-number> SPEC SPEC-STATUS.md SPEC.md
    ```
 
 This keeps the GitHub issue updated with the current spec validation status. The SPEC-STATUS.md file provides the 2-paragraph summary that appears at the top of the collapsible SPEC comment on GitHub.

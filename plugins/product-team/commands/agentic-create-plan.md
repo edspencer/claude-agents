@@ -61,11 +61,11 @@ When working with a GitHub issue:
 3. **Create Status Summary**: After plan-checker validation is complete, create a 2-paragraph summary of what the implementation plan covers (NOT a summary of the process that created it)
 4. **Push Plan to GitHub**: Use `push-file.sh` to sync with status summary:
    ```bash
-   ./.claude/skills/github-task-sync/push-file.sh {issue-number} PLAN {status-file} PLAN.md
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh {issue-number} PLAN {status-file} PLAN.md
    ```
 5. **Push Other Files**: Use `push.sh` to sync TEST_PLAN.md and COMMIT_MESSAGE.md:
    ```bash
-   ./.claude/skills/github-task-sync/push.sh {issue-number} {task-directory}
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push.sh {issue-number} {task-directory}
    ```
 
 **Status Summary Format:**
@@ -87,8 +87,8 @@ Key phases include: (1) [Phase 1 description], (2) [Phase 2 description], (3) [P
 **Example:**
 ```bash
 # After creating 2-paragraph status summary
-./.claude/skills/github-task-sync/push-file.sh 196 PLAN plan-status.txt ./tasks/196-team-page/PLAN.md
-./.claude/skills/github-task-sync/push.sh 196 ./tasks/196-team-page
+~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh 196 PLAN plan-status.txt ./tasks/196-team-page/PLAN.md
+~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push.sh 196 ./tasks/196-team-page
 ```
 
 This creates/updates the PLAN comment on GitHub with:
@@ -97,4 +97,4 @@ This creates/updates the PLAN comment on GitHub with:
 - Full plan content in collapsible `<details>` section
 - TEST_PLAN.md and COMMIT_MESSAGE.md as separate collapsible comments
 
-**Reference:** See `.claude/skills/github-task-sync/SKILL.md` for complete documentation.
+**Reference:** See `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/SKILL.md` for complete documentation.

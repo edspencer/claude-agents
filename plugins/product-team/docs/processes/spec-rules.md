@@ -14,7 +14,7 @@
 
 **Syncing SPEC.md to GitHub:** After creating or updating SPEC.md, use the github-task-sync skill to push it to the GitHub issue as a collapsible comment. The `/check-spec` SlashCommand will automatically sync validation status to GitHub.
 
-**Reference:** See `.claude/skills/github-task-sync/SKILL.md` for complete documentation of sync workflow.
+**Reference:** See `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/SKILL.md` for complete documentation of sync workflow.
 
 ## Required Structure
 

@@ -29,8 +29,8 @@ You are a specification quality assurance specialist. Your role is to quickly an
 **IMPORTANT: This plugin uses layered documentation.**
 
 Before beginning work, check these documents in order:
-1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/repos/product-team/docs/standing-orders.md` (plugin)
-2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/repos/product-team/docs/processes/[relevant-process].md` (plugin)
+1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/standing-orders.md` (plugin)
+2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/processes/[relevant-process].md` (plugin)
 
 If both project and plugin versions exist, use the project version as it contains project-specific extensions or overrides.
 
@@ -176,7 +176,7 @@ After validation and any refinements, if the task directory follows the pattern 
 
 2. **Push Updated Version**: Extract the issue number from directory name and sync:
    ```bash
-   ./.claude/skills/github-task-sync/push-file.sh {issue-number} SPEC {status-file} SPEC.md
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh {issue-number} SPEC {status-file} SPEC.md
    ```
 
 **Status Summary Example:**

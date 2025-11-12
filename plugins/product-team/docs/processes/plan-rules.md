@@ -166,7 +166,7 @@ When creating a GitHub issue is explicitly requested:
 - Use `push.sh` to sync all task files to GitHub at once
 - This keeps the GitHub issue updated as work progresses
 
-**Reference:** See `.claude/skills/github-task-sync/SKILL.md` for complete documentation of all available scripts and workflows.
+**Reference:** See `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/SKILL.md` for complete documentation of all available scripts and workflows.
 
 ### Plans Must Reference GitHub Sync
 

@@ -133,7 +133,7 @@ Orchestrate multiple agents for complete workflows:
 This plugin uses a **layered documentation system** for flexibility:
 
 ### Plugin Defaults (Global)
-- `~/.claude/plugins/repos/product-team/docs/`
+- `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/`
 - Provides base processes that work across projects
 
 ### Project Overrides (Local)
@@ -142,7 +142,7 @@ This plugin uses a **layered documentation system** for flexibility:
 
 **Lookup Order:**
 1. Check `.claude/docs/[file].md` in project (if exists)
-2. Fall back to `~/.claude/plugins/repos/product-team/docs/[file].md`
+2. Fall back to `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/[file].md`
 
 This means you can:
 - Use the plugin's defaults out of the box
@@ -240,7 +240,7 @@ Use plugin defaults, plus:
 Due to [Claude Code issue #9354](https://github.com/anthropics/claude-code/issues/9354), the `${CLAUDE_PLUGIN_ROOT}` environment variable doesn't work in markdown files (agents/commands).
 
 **Current Workaround:**
-We use hardcoded paths: `~/.claude/plugins/repos/product-team/`
+We use hardcoded paths: `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/`
 
 **Future:**
 When the bug is fixed, we'll update to: `${CLAUDE_PLUGIN_ROOT}/`

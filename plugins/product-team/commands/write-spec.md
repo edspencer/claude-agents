@@ -23,7 +23,7 @@ Your task is to gather all necessary information (through questions if needed) a
 
 ### Spec Requirements
 
-IMPORTANT: All SPEC.md documents must follow the strict requirements in Check `.claude/docs/processes/spec-rules.md` (project) OR `~/.claude/plugins/repos/product-team/docs/processes/spec-rules.md` (plugin). Read that file very carefully and adhere to its guidance.
+IMPORTANT: All SPEC.md documents must follow the strict requirements in Check `.claude/docs/processes/spec-rules.md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/processes/spec-rules.md` (plugin). Read that file very carefully and adhere to its guidance.
 
 **Key Requirements:**
 1. **File Location**: Always create in `./tasks/[task-name]/SPEC.md` where [task-name] is derived from the task
@@ -63,7 +63,7 @@ If the user explicitly requests that a GitHub issue be created, or if this is a 
 1. **Ask the user** if a GitHub issue should be created for this task
 2. **If yes**, use the github-task-sync skill's `create-issue.sh` script to create the issue and initialize the task directory:
    ```bash
-   ~/.claude/plugins/repos/product-team/skills/github-task-sync/create-issue.sh "<task-title>" "<brief-description>"
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/create-issue.sh "<task-title>" "<brief-description>"
    ```
 3. **Directory naming**: The script automatically creates a directory named `{issue-number}-{task-slug}/`
 4. **Work locally**: Create SPEC.md in the task directory as usual
@@ -83,7 +83,7 @@ After creating SPEC.md, if the task directory follows the pattern `tasks/{issue-
 
 2. **Push to GitHub**: Extract the issue number from the directory name and sync:
    ```bash
-   ./.claude/skills/github-task-sync/push-file.sh {issue-number} SPEC {status-file} SPEC.md
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh {issue-number} SPEC {status-file} SPEC.md
    ```
 
 **Status Summary Format Example:**

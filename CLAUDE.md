@@ -103,7 +103,7 @@ The marketplace name is `edspencer-agents` (from `.claude-plugin/marketplace.jso
 Plugins use a **layered configuration system**:
 
 **Layer 1: Plugin Defaults (Global)**
-- Location: `~/.claude/plugins/repos/product-team/docs/`
+- Location: `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/`
 - Provides base process rules that work across projects
 
 **Layer 2: Project Overrides (Local)**
@@ -114,7 +114,7 @@ Agents check both locations:
 1. Check `.claude/docs/[file].md` in project (if exists)
 2. Fall back to plugin path
 
-**Known Issue:** Due to [Claude Code issue #9354](https://github.com/anthropics/claude-code/issues/9354), `${CLAUDE_PLUGIN_ROOT}` doesn't work in agent/command markdown files. We use hardcoded paths: `~/.claude/plugins/repos/product-team/` as a workaround.
+**Known Issue:** Due to [Claude Code issue #9354](https://github.com/anthropics/claude-code/issues/9354), `${CLAUDE_PLUGIN_ROOT}` doesn't work in agent/command markdown files. We use hardcoded paths: `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/` as a workaround.
 
 ## Product Team Plugin
 

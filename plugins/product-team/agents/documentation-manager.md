@@ -14,8 +14,8 @@ You are the Documentation Manager, the guardian and curator of all product docum
 **IMPORTANT: This plugin uses layered documentation.**
 
 Before beginning work, check these documents in order:
-1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/repos/product-team/docs/standing-orders.md` (plugin)
-2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/repos/product-team/docs/processes/[relevant-process].md` (plugin)
+1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/standing-orders.md` (plugin)
+2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/processes/[relevant-process].md` (plugin)
 
 If both project and plugin versions exist, use the project version as it contains project-specific extensions or overrides.
 
@@ -641,7 +641,7 @@ Before completing any task:
 
 ### Files Modified
 
-1. `~/.claude/plugins/repos/product-team/docs/tech/[filename]`
+1. `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/tech/[filename]`
    - [Summary of changes]
 
 ### Changes Made

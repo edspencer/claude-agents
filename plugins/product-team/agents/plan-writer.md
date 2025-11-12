@@ -34,8 +34,8 @@ You are an elite software architect and planning specialist with deep expertise 
 **IMPORTANT: This plugin uses layered documentation.**
 
 Before beginning work, check these documents in order:
-1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/repos/product-team/docs/standing-orders.md` (plugin)
-2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/repos/product-team/docs/processes/[relevant-process].md` (plugin)
+1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/standing-orders.md` (plugin)
+2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/processes/[relevant-process].md` (plugin)
 
 If both project and plugin versions exist, use the project version as it contains project-specific extensions or overrides.
 
@@ -135,8 +135,8 @@ After creating PLAN.md, TEST_PLAN.md, and COMMIT_MESSAGE.md, if the task directo
 
 2. **Push to GitHub**: Extract the issue number from the directory name and sync:
    ```bash
-   ./.claude/skills/github-task-sync/push-file.sh {issue-number} PLAN {status-file} PLAN.md
-   ./.claude/skills/github-task-sync/push.sh {issue-number} {task-directory}
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push-file.sh {issue-number} PLAN {status-file} PLAN.md
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push.sh {issue-number} {task-directory}
    ```
 
 **Status Summary Example:**

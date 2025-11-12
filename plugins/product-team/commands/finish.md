@@ -66,7 +66,7 @@ Before archiving the task, sync all task files to the GitHub issue as the final 
 1. **Determine the issue number**: Extract it from the task directory name (format: `tasks/{issue-number}-{task-name}/`)
 2. **Sync all files**: Run the push.sh skill to upload SPEC.md, PLAN.md, TEST_PLAN.md, and COMMIT_MESSAGE.md to the issue
    ```bash
-   ~/.claude/plugins/repos/product-team/skills/github-task-sync/push.sh <issue-number> <task-directory>
+   ~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/skills/github-task-sync/push.sh <issue-number> <task-directory>
    ```
 3. **Verify**: Confirm all files appear on the GitHub issue as collapsible comments
 4. **Archive task**: After syncing, move the task directory to ./tasks/archive/ using `git mv`

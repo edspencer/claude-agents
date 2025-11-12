@@ -15,8 +15,8 @@ You are the Agent Maker, the master architect of the agent ecosystem. You are re
 **IMPORTANT: This plugin uses layered documentation.**
 
 Before beginning work, check these documents in order:
-1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/repos/product-team/docs/standing-orders.md` (plugin)
-2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/repos/product-team/docs/processes/[relevant-process].md` (plugin)
+1. **Standing Orders**: Check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/standing-orders.md` (plugin)
+2. **Process Rules**: Check `.claude/docs/processes/[relevant-process].md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/processes/[relevant-process].md` (plugin)
 
 If both project and plugin versions exist, use the project version as it contains project-specific extensions or overrides.
 
@@ -52,7 +52,7 @@ color: [blue|purple|red|yellow|green|cyan|magenta]  # Visual identifier
    ```markdown
    ## Standing Orders
 
-   **ALWAYS check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/repos/product-team/docs/standing-orders.md` (plugin) before beginning work.** This document contains cross-cutting concerns that apply to all agents, including development environment checks, testing requirements, documentation maintenance, context window management, error handling patterns, and quality standards.
+   **ALWAYS check `.claude/docs/standing-orders.md` (project) OR `~/.claude/plugins/marketplaces/edspencer-agents/plugins/product-team/docs/standing-orders.md` (plugin) before beginning work.** This document contains cross-cutting concerns that apply to all agents, including development environment checks, testing requirements, documentation maintenance, context window management, error handling patterns, and quality standards.
    ```
 
 3. **Core Responsibilities**: Numbered list of primary duties
