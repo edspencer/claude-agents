@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+.*.swp
+
+# Build artifacts
+dist/
+build/
+
+# Local testing
+test-install/
+.test/
+
+# Plugin-specific build files
+plugins/*/node_modules/
+plugins/*/dist/

@@ -1,0 +1,23 @@
+{
+  "name": "product-team",
+  "displayName": "Product Team",
+  "version": "0.1.0",
+  "description": "A comprehensive product development workflow plugin featuring spec writing, planning, implementation, and testing agents with GitHub integration. Includes structured processes for creating specifications, implementation plans, and test plans with bidirectional GitHub issue synchronization.",
+  "author": "Ed Spencer",
+  "repository": "https://github.com/edspencer/claude-agents",
+  "license": "MIT",
+  "tags": [
+    "workflow",
+    "product",
+    "development",
+    "planning",
+    "github",
+    "testing",
+    "documentation"
+  ],
+  "agents": true,
+  "commands": true,
+  "skills": true,
+  "hooks": false,
+  "mcpServers": false
+}

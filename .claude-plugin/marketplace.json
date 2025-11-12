@@ -1,0 +1,19 @@
+{
+  "name": "edspencer-agents",
+  "version": "1.0.0",
+  "owner": {
+    "name": "Ed Spencer",
+    "email": "ed@edspencer.net"
+  },
+  "plugins": [
+    {
+      "name": "product-team",
+      "displayName": "Product Team",
+      "description": "Comprehensive product development workflow with spec writing, planning, implementation, and testing agents plus GitHub integration",
+      "version": "0.1.0",
+      "author": "Ed Spencer",
+      "source": "./plugins/product-team",
+      "category": "Development"
+    }
+  ]
+}
