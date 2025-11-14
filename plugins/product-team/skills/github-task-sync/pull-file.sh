@@ -36,11 +36,20 @@ case "$FILE_TYPE" in
     ;;
 esac
 
+# Detect GitHub repository from git remote or environment
+SCRIPT_DIR="$(dirname "$0")"
+# shellcheck source=lib-repo-detect.sh
+source "$SCRIPT_DIR/lib-repo-detect.sh"
+
 # Normalize the issue URL/number
 if [[ $ISSUE_INPUT =~ ^https?://github\.com/ ]]; then
   ISSUE_URL="$ISSUE_INPUT"
 else
-  ISSUE_URL="https://github.com/${GITHUB_OWNER:-your-org}/${GITHUB_REPO:-your-repo}/issues/$ISSUE_INPUT"
+  # Need repo info for building URL from issue number
+  if ! detect_github_repo; then
+    exit 1
+  fi
+  ISSUE_URL="https://github.com/$REPO_OWNER/$REPO_NAME/issues/$ISSUE_INPUT"
 fi
 
 # Parse the URL to extract owner, repo, and issue number

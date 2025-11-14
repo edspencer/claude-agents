@@ -461,6 +461,7 @@ When finishing a task (via `/finish` command):
 - `gh` CLI installed and authenticated
 - Bash shell
 - Read/write access to the GitHub repository
+- Git repository with GitHub remote (for auto-detection)
 
 ## Integration with Other Commands
 
@@ -478,10 +479,28 @@ When finishing a task (via `/finish` command):
 
 ## Setup & Configuration
 
-All scripts reference a default repository (which should be configured with your actual GitHub repository). To use with a different repository, modify the `OWNER` and `REPO` variables in the scripts or pass full GitHub URLs.
+The scripts **automatically detect** the GitHub repository from your current git remote (origin). No configuration needed!
 
-**Using with different repository:**
-```bash
-# Use full URL instead of issue number
-./push.sh "https://github.com/myorg/myrepo/issues/42" ./tasks/42-myfeature
+**Repository Detection:**
+1. **Auto-detect** (recommended): Scripts automatically extract owner/repo from `git remote get-url origin`
+   - Supports both HTTPS: `https://github.com/owner/repo.git`
+   - Supports SSH: `git@github.com:owner/repo.git`
+
+2. **Environment variables** (optional override):
+   ```bash
+   export GITHUB_OWNER="myorg"
+   export GITHUB_REPO="myrepo"
+   ```
+
+3. **Full URLs** (always works):
+   ```bash
+   # Use full URL instead of issue number to override auto-detection
+   ./push.sh "https://github.com/otherorg/otherrepo/issues/42" ./tasks/42-myfeature
+   ```
+
+**Error Handling:**
+If you run scripts outside a git repository or without a GitHub remote, you'll see a helpful error:
+```
+Error: Not in a git repository
+Please run this command from within a git repository, or set GITHUB_OWNER and GITHUB_REPO environment variables
 ```

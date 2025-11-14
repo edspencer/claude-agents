@@ -31,9 +31,17 @@ DESCRIPTION="${2:-}"
 EXISTING_TASK_DIR="${3:-}"
 LABELS="${4:-}"
 
-# Default repository (can be overridden with your actual repository)
-OWNER="${GITHUB_OWNER:-your-org}"
-REPO="${GITHUB_REPO:-your-repo}"
+# Detect GitHub repository from git remote or environment
+SCRIPT_DIR="$(dirname "$0")"
+# shellcheck source=lib-repo-detect.sh
+source "$SCRIPT_DIR/lib-repo-detect.sh"
+
+if ! detect_github_repo; then
+  exit 1
+fi
+
+OWNER="$REPO_OWNER"
+REPO="$REPO_NAME"
 REPO_FULL="$OWNER/$REPO"
 
 echo "Creating GitHub issue..."
